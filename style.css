@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation: divniAylantir 2s linear infinite;
+    /* animation-name: moveBox; animatsiya nomi */
+    /* animation-duration: 2s; animatsiya davom etish muddati */
+    /* animation-timing-function: linear;  animatsiya qanday davom etishi */
+    /* animation-iteration-count: 2; animatsiya necha marta qoyilishi */
+    /* animation-fill-mode: forwards; animation qayerda to'xtashini hal qiladi */
+    /* animation-delay: 2s; animatsiya kech qolish vaqti */
+    /* animation-direction: alternate-reverse; animatsiya qaytarilishi */
+    /* position: relative; */
+    /* animation: moveBox 2s linear 2s 2 alternate-reverse forwards; */
+    transform-origin: bottom;
+    border: 1px solid black;
+}
+
+@keyframes divniAylantir{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* @keyframes moveBox{
+    from{
+        left: 0;
+    }
+    to{
+        left: 300px;
+    }
+} */
